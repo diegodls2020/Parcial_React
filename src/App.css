@@ -1,42 +1,52 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Establecer el fondo de toda la pantalla en blanco */
+body {
+  background-color: white;
+  color: black; /* Establecer el color de la fuente en negro */
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilizar el formulario */
+form {
+  margin: 20px; /* Centrar el formulario horizontalmente */
+  padding: 20px;
+  background-color: #f4f4f4; /* Establecer un color de fondo gris claro */
+  border-radius: 10px; /* Agregar bordes redondeados al formulario */
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Estilizar los elementos dentro del formulario */
+form label {
+  display: block;
+  margin-bottom: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input {
+  background-color: white;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Agregar borde a los inputs */
+  border-radius: 5px; /* Agregar bordes redondeados a los inputs */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(
+    0,
+    140,
+    255
+  ); /* Cambiar el color de fondo del botón a azul */
+  color: white; /* Cambiar el color del texto del botón a blanco */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Estilizar el mensaje de error */
+.error {
+  color: red;
+  margin-top: 10px;
 }
