@@ -31,12 +31,12 @@ const Form = () => {
     <>
       <form onSubmit={handleSubmit}>
         <input 
-        placeholder="Nombre"
+        placeholder="Ingresa tu nombre"
         type="text" 
         value={cliente.nombre} 
         onChange={handleName} />
         <input
-        placeholder="Color Favorito"
+        placeholder="Ingresa tu color favorito (formato HEX)"
           type="text"
           value={cliente.color}
           onChange={handleColor}

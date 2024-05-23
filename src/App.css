@@ -1,21 +1,21 @@
-/* Establecer el fondo de toda la pantalla en blanco */
 body {
-  background-color: white;
-  color: black; /* Establecer el color de la fuente en negro */
-  font-size: 14px;
-  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: white; /* Fondo blanco */
+  color: black; /* Texto negro */
 }
 
-/* Estilizar el formulario */
 form {
-  margin: 20px; /* Centrar el formulario horizontalmente */
-  padding: 20px;
-  background-color: #f4f4f4; /* Establecer un color de fondo gris claro */
-  border-radius: 10px; /* Agregar bordes redondeados al formulario */
+  margin: 20px; 
+  padding: 20px 20px 20px 20px;
+  background-color: #f4f4f4; 
+  border-radius: 10px; 
   text-align: center;
 }
 
-/* Estilizar los elementos dentro del formulario */
 form label {
   display: block;
   margin-bottom: 10px;
@@ -25,10 +25,10 @@ form input {
   background-color: white;
   color: black;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc; /* Agregar borde a los inputs */
-  border-radius: 5px; /* Agregar bordes redondeados a los inputs */
+  height: 100%;
+  margin-bottom: 5px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
 }
 
 form button {
@@ -38,14 +38,13 @@ form button {
     0,
     140,
     255
-  ); /* Cambiar el color de fondo del botón a azul */
-  color: white; /* Cambiar el color del texto del botón a blanco */
+  ); 
+  color: white; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-/* Estilizar el mensaje de error */
 .error {
   color: red;
   margin-top: 10px;
